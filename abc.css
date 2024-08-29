@@ -1,0 +1,14 @@
+div{
+    border: 1px dotted red;
+}
+#a1{
+    padding: 20px 10px 20px 50px;
+    width: 30%;
+    float: left;
+}
+#a2{
+    padding: 20px 10px 20px 50px;
+    width: 30%;
+    float: left;
+}
+

@@ -1,0 +1,20 @@
+#wrapper{
+    max-width: 960px;
+    margin: 0px auto;
+}
+#header{
+    background-color: blue;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+
+}
+#wp_content{
+    display: flex;
+}
+#content{
+    flex-basis: 70%;
+}
+#sidebar{
+    flex-basis: 30%;
+}
