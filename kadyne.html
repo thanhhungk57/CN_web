@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng 8/3 - Gửi đến Kim Anh 💖</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffecf2;
+            text-align: center;
+            padding: 50px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        img {
+            width: 250px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>💖 Gửi đến Kim Anh 💖</h1>
+    <p>Chúc mừng ngày 8/3, ngày đặc biệt dành riêng cho em!</p>
+
+    <div class="card">
+        <p id="message">Bấm vào nút để nhận một lời chúc đặc biệt! 🎁</p>
+        <button onclick="showMessage()">Nhận lời chúc 🌸</button>
+        <br><br>
+
+        <!-- 🖼️ Chỗ để chèn ảnh -->
+        <img id="kimanh-photo" src="your-image.jpg" alt="Ảnh của Kim Anh (thay bằng ảnh của bạn)">
+    </div>
+
+    <script>
+        const messages = [
+            "Chúc Kim Anh luôn xinh đẹp, hạnh phúc và đạt được mọi ước mơ của mình! 🌸",
+            "Chúc em có một ngày 8/3 thật rạng rỡ, vui vẻ và tràn đầy yêu thương! 💕",
+            "Hãy luôn cười tươi như những bông hoa mùa xuân nhé! 🌼",
+            "Em là người đặc biệt và đáng trân trọng nhất. Chúc em mãi hạnh phúc! 💖",
+            "Mong mọi điều tốt đẹp nhất luôn đến với em, cô gái tuyệt vời của ngày hôm nay! 🎀"
+        ];
+        
+        function showMessage() {
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            document.getElementById("message").textContent = messages[randomIndex];
+        }
+    </script>
+</body>
+</html>
