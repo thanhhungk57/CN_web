@@ -48,21 +48,30 @@
         <br><br>
 
         <!-- 🖼️ Chỗ để chèn ảnh -->
-        <img id="kimanh-photo" src="Kady.jpg" alt="Ảnh của Kim Anh (thay bằng ảnh của bạn)">
+        <img id="kimanh-photo" src="Kady.jpg" alt="Ảnh của Kim Anh">
     </div>
 
     <script>
         const messages = [
             "Chúc Kim Anh luôn xinh đẹp, hạnh phúc và đạt được mọi ước mơ của mình! 🌸",
-            "Chúc em có một ngày 8/3 thật rạng rỡ, vui vẻ và tràn đầy yêu thương! 💕",
+            "Kim Anh à, hôm nay là ngày của những bông hoa đẹp nhất, và chị chính là một trong số đó. Chúc chị luôn rạng rỡ, hạnh phúc và được yêu thương thật nhiều! 💕",
             "Hãy luôn cười tươi như những bông hoa mùa xuân nhé! 🌼",
-            "Em là người đặc biệt và đáng trân trọng nhất. Chúc em mãi hạnh phúc! 💖",
-            "Mong mọi điều tốt đẹp nhất luôn đến với em, cô gái tuyệt vời của ngày hôm nay! 🎀"
+            "Kim Anh à, chúc chị một ngày 8/3 tràn đầy yêu thương, luôn cười tươi và gặp nhiều may mắn. Ngủ ngon nhé!💖",
+            "Mong mọi điều tốt đẹp nhất luôn đến với chị, cô gái tuyệt vời của ngày hôm nay! 🎀"
         ];
         
+        const images = [
+            "image1.jpg",
+            "image2.jpg",
+            "image3.jpg",
+            "image4.jpg",
+            "image5.jpg"
+        ];
+
         function showMessage() {
             const randomIndex = Math.floor(Math.random() * messages.length);
             document.getElementById("message").textContent = messages[randomIndex];
+            document.getElementById("kimanh-photo").src = images[randomIndex];
         }
     </script>
 </body>
